@@ -138,10 +138,10 @@ CREATE TABLE t1(key string, value string);
 -- creaet partitioned table
 CREATE TABLE pt1(key string, value string) PARTITIONED BY (year int, month int);
 
--- creaet table with specifc format
+-- creaet table with specific format
 CREATE TABLE t1(key string, value string) STORED AS ORC;
 
--- create table with specifc rowfromat
+-- create table with specific rowfromat
 CREATE TABLE t1(m MAP<BIGINT, STRING>) 
   ROW FROMAT DELIMITED COLLECTION ITEMS TERMINATED BY ';'
   MAP KEYS TERMINATED BY ':';
